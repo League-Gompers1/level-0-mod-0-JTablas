@@ -37,9 +37,9 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         URL url;
         try {
             //1. Find a picture of a rock, paper, and scissors on the internet. Replace the URL's below with your images
-            rockImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg"));  
-            paperImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
-            scissorsImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
+            rockImage = ImageIO.read(new URL("http://sciencenetlinks.com/media/filer_thumbnails/2011/10/28/rocks1.jpg__480x274_q85.jpg"));  
+            paperImage = ImageIO.read(new URL("http://1106design.com/wp-content/uploads/2014/05/paper.jpg")); 
+            scissorsImage = ImageIO.read(new URL("https://pptcrafter.files.wordpress.com/2014/09/sciss7.png")); 
         } catch (MalformedURLException ex) {
             Logger.getLogger(RockPaperScissors.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -81,7 +81,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         //2. Run the program multiple times. Does the computer always choose the same thing?
         //3. Make oppenentSelection a random number between 0 and 2;
         int opponentSelection = 0;
-        
+        opponentSelection = new Random().nextInt(2-0)+0;
         //4. Run the program again. Is the result better?
         
         if(e.getSource() == paperButton){

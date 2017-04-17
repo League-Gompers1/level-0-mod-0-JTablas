@@ -3,7 +3,7 @@ package learning_random;
 import java.util.Random;
 
 //1. Run the program.  What number appears?
-
+//0
 //2. Make the number random.
 
 //3. Limit the random number between 0 and 100
@@ -17,6 +17,7 @@ public class IntroToRandom {
 		//Create an object of the Random class here
 
 		int r = 0;
+		r = new Random().nextInt(88+222)-222;
 		
 		System.out.println(r); 
 	}
